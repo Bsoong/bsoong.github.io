@@ -1,0 +1,65 @@
+
+
+slider {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    background-color: blanchedalmond;
+    overflow: hidden;
+    position: center;
+}
+
+slider > * {
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-color: blanchedalmond;
+    animation: slide 12s infinite;
+    overflow: hidden
+}
+
+slide:nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-size: contain;
+    background-position: center; 
+}
+
+slide:nth-child(2) {
+    animation-delay: 2s;
+    background-size: cover;
+    background-position: center; 
+}
+
+slide:nth-child(3) {
+    left: 0%;
+    animation-delay: 2s;
+    background-size: cover;
+    background-position: center; 
+} 
+
+slide:nth-child(4) {
+    left: 0%;
+    animation-delay: 2s;
+    background-size: cover;
+    background-position: center; 
+} 
+slide p {
+    font-family: Comfortaa;
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color: #fff;
+}
+
+@keyframes slide {
+    0% { left: 100%; width: 100%;}
+    5% {left: 0%}
+    25%{left: 0%}
+    30% {left: -100%; width: 100%;}
+    30.0001% { left: -100%; width: 0%;}
+    100% { left: -100%; width: 0%}
+}
