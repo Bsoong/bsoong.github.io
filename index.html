@@ -1,25 +1,83 @@
 <!DOCTYPE html>
 <html>
     <title>Brandon Soong</title>
-<header>
-    <link rel= "stylesheet" type = "text/css" href= "bsoong.github.io-master/css/style.css">
-    </header>
+<head>
+    <link rel= "stylesheet" type = "text/css" href= "style.css">
+        </head>
     <body>
-        <p><a href = "/file/Resume"> Resume </a></p>
+        <div class="slider" id="main-slider"><!-- outermost container element -->
+            <div class="slider-wrapper"><!-- innermost wrapper element -->
+		      <img href = "Slideshow/Rachel.jpg" alt="My sister and I" class="slide"/>
+		      <img href = "Slideshow/Dad.jpg" alt="My father and I" class="slide"/>
+		      <img href = "Slideshow/family.jpg" alt="My family" class="slide"/>
+	       </div>
+            <div class="slider-nav"><!-- "Previous" and "Next" actions -->
+		      <button class="slider-previous">Previous</button>
+		      <button class="slider-next">Next</button>
+	       </div>
+        </div>
+        <script>
+            (function() {
+	function Slideshow(element) {
+		this.el = document.querySelector(element);
+		this.init();
+	}
+	Slideshow.prototype = {
+		init: function() {
+			this.wrapper = this.el.querySelector(".slider-wrapper");
+			this.slides = this.el.querySelectorAll(".slide");
+			this.previous = this.el.querySelector(".slider-previous");
+			this.next = this.el.querySelector(".slider-next");
+			this.index = 0;
+			this.total = this.slides.length;
+			this.actions();
+		},
+		_slideTo: function(slide) {
+			var currentSlide = this.slides[slide];
+			this.wrapper.style.left = "-" + currentSlide.offsetLeft + "px";
+		},
+		actions: function() {
+			var self = this;
+			self.next.addEventListener("click", function() {
+				self.index++;
+				self.previous.style.display = "block";
+				if (self.index == self.total - 1) {
+					self.index = self.total - 1;
+					self.next.style.display = "none";
+				}
+				self._slideTo(self.index);
+			}, false);
+			self.previous.addEventListener("click", function() {
+				self.index--;
+				self.next.style.display = "block";
+				if (self.index == 0) {
+					self.index = 0;
+					self.previous.style.display = "none";
+				}
+				self._slideTo(self.index);
+			}, false);
+		}
+	};
+	document.addEventListener("DOMContentLoaded", function() {
+		var slider = new Slideshow("#main-slider");
+	});
+})();
+</script>
         <div class = "Contacts">
         <p>Ways to Contact me:</p>
         <a href = "https://www.facebook.com/brandon.soong.9">
-            <img src = "Icons/Facebook.png" alt = "Facebook">
+            <img src = "Icons/Facebook.png" alt = "Facebook" style="width:4em;">
         </a>
         <a href = "https://www.linkedin.com/in/brandon-soong-318b19162/">
-            <img src = "Icons/LinkedIn.png" alt = "Linkedin">
+            <img src = "Icons/LinkedIn.png" alt = "Linkedin" style="width:4em;">
         </a>
         <a href = "https://www.instagram.com/bsoong99/" >
-            <img src = "Icons/Instagram.png" alt = "Instagram">
+            <img src = "Icons/Instagram.png" alt = "Instagram" style="width:4em;">
         </a>
-        <a href ="https://twitter.com/bsoongg/">
-            <img src = "Icons/Twitter.png" alt = "Twitter">
+        <a href ="https://twitter.com/bsoongg/" >
+            <img src = "Icons/Twitter.png" alt = "Twitter" style="width:4em;">
         </a>
+            <p><a href = "/file/resume.pdf">Resume </a></p>
         </div>
         </body>
 </html>
