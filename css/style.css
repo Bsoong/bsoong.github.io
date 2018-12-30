@@ -9,6 +9,7 @@
    height: 100%;
    background-color: beige;
    text-align: center;
+   object-fit: cover;
 }
 
 .Contacts {
