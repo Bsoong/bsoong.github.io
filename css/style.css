@@ -1,14 +1,13 @@
-
 .Gradient {
-padding: 0;
-margin: 0;
-background: linear-gradient(227deg, #06beb6, #48b1bf);
-background-size: ;
-background: -webkit-animation: Gradient 8s ease infinite;
-background: -moz-animation: Gradient 8s ease infinite;
-background: -o-animation: Gradient 8s ease infinite;
-animation: Gradient 8s ease infinite;
-background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(227deg, #06beb6, #2E7B2E);
+    background-size: ;
+    background: -webkit-animation: Gradient 8s ease infinite;
+    background: -moz-animation: Gradient 8s ease infinite;
+    background: -o-animation: Gradient 8s ease infinite;
+    animation: Gradient 8s ease infinite;
+    background-attachment: fixed;
 }
 .img {
     padding: 0;
@@ -20,6 +19,11 @@ background-attachment: fixed;
 .text {
     text-align: center;
     font-size: 30px;
+}
+
+.text2 {
+    text-align: center;
+    font-size: 25px;
 }
 
 
@@ -69,4 +73,46 @@ background-attachment: fixed;
 }
 .Slideshow img:nth-child(1){
     animation-delay:15s;
+}
+
+.a1 {   
+    color: #fff !important;
+    text-transform: uppercase;
+    background: black;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+}
+
+.a1:hover {
+    background: linear-gradient(#06beb6, #2E7B2E);
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.a2 {   
+    color: #fff !important;
+    background: black;
+    text-transform: uppercase;
+    padding: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+}
+
+.a2:hover {
+    background: linear-gradient(#06beb6, #2E7B2E);
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
 }
