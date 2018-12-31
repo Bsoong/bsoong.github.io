@@ -4,67 +4,18 @@
 <head>
     <link rel= "stylesheet" type = "text/css" href= "css/style.css">
         </head>
-    <body>
-        <div class="slider" id="main-slider"><!-- outermost container element -->
-            <div class="slider-wrapper"><!-- innermost wrapper element -->
-		      <img src = "Slideshow/Rachel.jpg" alt="My sister and I" class="slide"/>
-		      <img src = "Slideshow/Dad.jpg" alt="My father and I" class="slide"/>
-		      <img src = "Slideshow/family.jpg" alt="My family" class="slide"/>
-	       </div>
-            <div class="slider-nav"><!-- "Previous" and "Next" actions -->
-		      <button class="slider-previous">Previous</button>
-		      <button class="slider-next">Next</button>
-	       </div>
+    <body class = Gradient>
+        <div class="Slideshow">
+            <img src="Slideshow/Dad.jpg" alt="Slide 4" />
+            <img src="Slideshow/family.jpg" alt="Slide 3" />
+            <img src="Slideshow/family2.jpg" alt="Slide 2" />
+            <img src="Slideshow/Rachel.jpg" alt="Slide 1" />
         </div>
-        <script>
-            (function() {
-	function Slideshow(element) {
-		this.el = document.querySelector(element);
-		this.init();
-	}
-	Slideshow.prototype = {
-		init: function() {
-			this.wrapper = this.el.querySelector(".slider-wrapper");
-			this.slides = this.el.querySelectorAll(".slide");
-			this.previous = this.el.querySelector(".slider-previous");
-			this.next = this.el.querySelector(".slider-next");
-			this.index = 0;
-			this.total = this.slides.length;
-			this.actions();
-		},
-		_slideTo: function(slide) {
-			var currentSlide = this.slides[slide];
-			this.wrapper.style.left = "-" + currentSlide.offsetLeft + "px";
-		},
-		actions: function() {
-			var self = this;
-			self.next.addEventListener("click", function() {
-				self.index++;
-				self.previous.style.display = "block";
-				if (self.index == self.total - 1) {
-					self.index = self.total - 1;
-					self.next.style.display = "none";
-				}
-				self._slideTo(self.index);
-			}, false);
-			self.previous.addEventListener("click", function() {
-				self.index--;
-				self.next.style.display = "block";
-				if (self.index == 0) {
-					self.index = 0;
-					self.previous.style.display = "none";
-				}
-				self._slideTo(self.index);
-			}, false);
-		}
-	};
-	document.addEventListener("DOMContentLoaded", function() {
-		var slider = new Slideshow("#main-slider");
-	});
-})();
-</script>
+        <div class = "text">
+            <p><strong>Brandon Soong</strong></p>
+            <p><u>Stevens Institute of Technology Computer Science Student </u></p>
+        </div>
         <div class = "Contacts">
-        <p>Ways to Contact me:</p>
         <a href = "https://www.facebook.com/brandon.soong.9">
             <img src = "Icons/Facebook.png" alt = "Facebook" style="width:4em;">
         </a>
@@ -77,7 +28,7 @@
         <a href ="https://twitter.com/bsoongg/" >
             <img src = "Icons/Twitter.png" alt = "Twitter" style="width:4em;">
         </a>
-            <p><a href = "file/resume.pdf">Resume</a></p>
+            <p><a href = "file/resume.pdf">Resume</a> <a href = "mailto:bsoong99@gmail.com" target ="_top">Email</a></p>
         </div>
-        </body>
+    </body>
 </html>
