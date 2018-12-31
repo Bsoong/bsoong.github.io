@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     background: linear-gradient(227deg, #06beb6, #2E7B2E);
-    background-size: ;
     background: -webkit-animation: Gradient 8s ease infinite;
     background: -moz-animation: Gradient 8s ease infinite;
     background: -o-animation: Gradient 8s ease infinite;
@@ -18,12 +17,12 @@
     max-height: 100%;
     max-width: 100%;
 }
+
 .text {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 35px;
 }
-
 
 .Contacts {
     margin-left: auto;
@@ -43,6 +42,7 @@
     overflow:hidden; 
     position: relative; 
 }
+
 .Slideshow img{ 
     object-fit: cover;
     position:absolute;
