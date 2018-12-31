@@ -1,4 +1,5 @@
 .Gradient {
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     background: linear-gradient(227deg, #06beb6, #2E7B2E);
@@ -8,6 +9,7 @@
     background: -o-animation: Gradient 8s ease infinite;
     animation: Gradient 8s ease infinite;
     background-attachment: fixed;
+    line-height: 1em;
 }
 .img {
     padding: 0;
@@ -17,13 +19,9 @@
     max-width: 100%;
 }
 .text {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 30px;
-}
-
-.text2 {
-    text-align: center;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 
@@ -48,7 +46,7 @@
 .Slideshow img{ 
     object-fit: cover;
     position:absolute;
-    animation:Slideshow 20s infinite; 
+    animation:Slideshow 25s infinite; 
     opacity:0;
     width: 100%;
     height: auto;
@@ -62,17 +60,20 @@
         opacity:0;
     }
 } 
-.Slideshow img:nth-child(4){
+.Slideshow img:nth-child(5){
     animation-delay:0s;
 }
-.Slideshow img:nth-child(3){
+.Slideshow img:nth-child(4){
     animation-delay:5s;
 }
-.Slideshow img:nth-child(2){
+.Slideshow img:nth-child(3){
     animation-delay:10s;
 }
-.Slideshow img:nth-child(1){
+.Slideshow img:nth-child(2){
     animation-delay:15s;
+}
+.Slideshow img:nth-child(1){
+    animation-delay:20s;
 }
 
 .a1 {   
@@ -116,3 +117,5 @@
     box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
     transition: all 0.4s ease 0s;
 }
+
+
