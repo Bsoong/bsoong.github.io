@@ -61,19 +61,19 @@
     }
 } 
 .Slideshow img:nth-child(5){
-    animation-delay:0s;
-}
-.Slideshow img:nth-child(4){
     animation-delay:5s;
 }
-.Slideshow img:nth-child(3){
+.Slideshow img:nth-child(4){
     animation-delay:10s;
 }
-.Slideshow img:nth-child(2){
+.Slideshow img:nth-child(3){
     animation-delay:15s;
 }
-.Slideshow img:nth-child(1){
+.Slideshow img:nth-child(2){
     animation-delay:20s;
+}
+.Slideshow img:nth-child(1){
+    animation-delay:25s;
 }
 
 .a1 {   
