@@ -21,8 +21,9 @@
 .text {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 35px;
+    font-size: 3vw;
 }
+
 
 .Contacts {
     margin-left: auto;
@@ -32,7 +33,6 @@
 }
 
 .Slideshow {
-    border-radius: 50%;
     display: table;
     margin-top: 50px;
     margin-left: auto;
@@ -45,6 +45,7 @@
 
 .Slideshow img{ 
     object-fit: cover;
+    border-radius: 50%;
     position:absolute;
     animation:Slideshow 25s infinite; 
     opacity:0;
