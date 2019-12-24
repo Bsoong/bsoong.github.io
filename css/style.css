@@ -21,8 +21,9 @@
 .text {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 35px;
+    font-size: 3vw;
 }
+
 
 .Contacts {
     margin-left: auto;
@@ -32,19 +33,19 @@
 }
 
 .Slideshow {
-    border-radius: 50%;
     display: table;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     width:350px;
-    height:300px;
+    height:250px;
     overflow:hidden; 
     position: relative; 
 }
 
 .Slideshow img{ 
     object-fit: cover;
+    border-radius: 50%;
     position:absolute;
     animation:Slideshow 25s infinite; 
     opacity:0;
@@ -61,19 +62,19 @@
     }
 } 
 .Slideshow img:nth-child(5){
-    animation-delay:5s;
+    animation-delay:0s;
 }
 .Slideshow img:nth-child(4){
-    animation-delay:10s;
+    animation-delay:5s;
 }
 .Slideshow img:nth-child(3){
-    animation-delay:15s;
+    animation-delay:10s;
 }
 .Slideshow img:nth-child(2){
-    animation-delay:20s;
+    animation-delay:15s;
 }
 .Slideshow img:nth-child(1){
-    animation-delay:25s;
+    animation-delay:20s;
 }
 
 .a1 {   
