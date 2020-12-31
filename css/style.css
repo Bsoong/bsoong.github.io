@@ -38,7 +38,7 @@
     margin-left: auto;
     margin-right: auto;
     width:350px;
-    height:250px;
+    height:500px;
     overflow:hidden; 
     position: relative; 
 }
@@ -50,7 +50,7 @@
     animation:Slideshow 25s infinite; 
     opacity:0;
     width: 100%;
-    height: auto;
+    height: 60%;
 }
 
 @keyframes Slideshow {
@@ -77,6 +77,7 @@
     animation-delay:20s;
 }
 
+
 .a1 {   
     color: #fff !important;
     text-transform: uppercase;
@@ -90,7 +91,6 @@
 }
 
 .a1:hover {
-    background: linear-gradient(#06beb6, #2E7B2E);
     letter-spacing: 1px;
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
@@ -111,7 +111,6 @@
 }
 
 .a2:hover {
-    background: linear-gradient(#06beb6, #2E7B2E);
     letter-spacing: 1px;
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
@@ -119,4 +118,17 @@
     transition: all 0.4s ease 0s;
 }
 
+.a3:hover {
+    background: white;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 50px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
 
+.sizeDown {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
