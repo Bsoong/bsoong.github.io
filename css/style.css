@@ -136,14 +136,16 @@
     display: none;
     margin-right: auto;
     margin-left: auto;
-    width: 200px;
+    width: 175px;
+    font-size: 20px;
     text-align: center;
 }
 .hide2 {
     display: none;
     margin-right: auto;
     margin-left: auto;
-    width: 200px;
+    width: 175px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -161,8 +163,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    grid-template-columns: auto auto;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 3vw;
@@ -170,6 +171,5 @@
 
 .grid-item {
     padding: 10px;
-    font-size: 30px;
     text-align: center;
 }
