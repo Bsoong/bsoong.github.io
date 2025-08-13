@@ -2,45 +2,97 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="icon" type="image/png" href="/Icons/favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Brandon Soong</title>
 </head>
 
-<body class=Gradient>
-    <a href="../index.html">
-        <img src="arrow.png" style="height: auto; width: 2%">
-    </a>
-    <p style="font-size: 42px; text-align: center;"><u>Projects</u></p>
-    <div class="container">
-        <div class="item">
-            <div class="show1">
-                <a href="https://www.drunkful.com">
-                    <img style="width: 15%; height: 15%; padding-bottom: 20px;" src="andriod_icon.png" alt="Drunkful" />
-                </a>
-            </div>
-            <p class="hide1"><strong>Drunkful</strong> <br>A fun drinking App built using the Expo framework as a side
-                project during the 2020
-                quarantine. Amassed 1500+ downloads combined on Google play and the App store. For more information
-                click the image to see our website!
-            </p>
+<body class="Gradient">
+    <header class="header">
+        <div class="nav-container">
+            <h1 class="logo">Brandon Soong</h1>
+            <nav class="nav-tabs">
+                <a href="../index.html" class="nav-tab" data-tab="home">Home</a>
+                <a href="#projects" class="nav-tab active" data-tab="projects">Projects</a>
+            </nav>
         </div>
-        <div class="item">
-            <div class="show2">
-                <a href="https://forkist.com">
-                    <img src="textLogo@1x_red.png" alt="Forkist" />
-                </a>
-            </div>
-            <p class="hide2"><strong>Forkist</strong><br>A startup company focused on creating a social media app that
-                revolves around food reviews
-                and
-                locating places to eat. For more information click the image to see our website!
+    </header>
 
-            </p>
+    <main class="main-content">
+        <div class="projects-page">
+            <h1 class="page-title">Projects</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="https://www.drunkful.com">
+                            <img src="andriod_icon.png" alt="Drunkful App" />
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3>Drunkful</h3>
+                        <p>A fun drinking app built using the Expo framework as a side project during the 2020 quarantine. Amassed 1500+ downloads combined on Google Play and the App Store.</p>
+                        <a href="https://www.drunkful.com" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="https://forkist.com">
+                            <img src="textLogo@1x_red.png" alt="Forkist" />
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3>Forkist</h3>
+                        <p>A startup company focused on creating a social media app that revolves around food reviews and locating places to eat.</p>
+                        <a href="https://forkist.com" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="https://hudsonhapps.com">
+                            <div class="project-placeholder">
+                                <h4>Hudson Happs</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3>Hudson Happs</h3>
+                        <p>A comprehensive full-stack web application showcasing modern development practices with React, Node.js, and cloud deployment. Features real-time data processing, responsive design, and scalable architecture.</p>
+                        <a href="https://hudsonhapps.com" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+    
+    <section class="social-section projects-social">
+        <h3>Connect with me</h3>
+        <div class="Contacts">
+            <a href="https://www.facebook.com/brandon.soong.9" aria-label="Facebook">
+                <img src="../Icons/Facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/brandon-soong-318b19162/" aria-label="LinkedIn">
+                <img src="../Icons/LinkedIn.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/bsoong99/" aria-label="Instagram">
+                <img src="../Icons/Instagram.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/bsoongg/" aria-label="Twitter">
+                <img src="../Icons/Twitter.png" alt="Twitter">
+            </a>
+            <a href="https://github.com/Bsoong" aria-label="GitHub">
+                <img src="../Icons/Github.png" alt="GitHub">
+            </a>
+        </div>
+        <div class="button_cont">
+            <a class="a1" href="../file/Resume.pdf" target="_blank" rel="nofollow noopener"><strong>Resume</strong></a>
+            <a class="a2" href="mailto:bsoong99@gmail.com" target="_blank" rel="nofollow noopener"><strong>Email</strong></a>
+        </div>
+    </section>
 </body>
 
 </html>
