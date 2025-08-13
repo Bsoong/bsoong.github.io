@@ -237,7 +237,7 @@
 
 /* Main Content Styles */
 .main-content {
-    min-height: 70vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,7 +317,7 @@
     text-align: center;
     padding: 2rem 1rem;
     max-width: 800px;
-    margin: -230px auto 0 auto;
+    margin: -150px auto 0 auto;
 }
 
 /* Music page specific spacing */
@@ -497,6 +497,9 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
 }
 
 .project-card:hover {
@@ -509,8 +512,8 @@
 }
 
 .project-image img {
-    max-width: 150px;
-    max-height: 150px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
@@ -532,6 +535,16 @@
 }
 
 .project-placeholder:hover {
+    transform: scale(1.05);
+}
+
+.hudson-happs-logo {
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.hudson-happs-logo:hover {
     transform: scale(1.05);
 }
 
@@ -558,6 +571,7 @@
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
+    margin-top: auto;
 }
 
 .project-link:hover {
@@ -590,6 +604,25 @@
     
     .projects-social h3 {
         margin-top: 150px;
+    }
+    
+    /* Fix home page social section overlap on mobile */
+    .social-section:not(.projects-social) {
+        margin-top: -50px;
+    }
+    
+    /* Remove dashes from intro list on mobile */
+    .intro-list li:before {
+        display: none;
+    }
+    
+    .intro-list li {
+        padding-left: 0;
+    }
+    
+    /* Remove min-height from main-content on mobile */
+    .main-content {
+        min-height: auto;
     }
     
 
